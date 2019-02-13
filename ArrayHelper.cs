@@ -10,6 +10,10 @@ namespace PadawansTask5
             {
                 throw new ArgumentNullException();
             }
+            if (source.Length == 0)
+            {
+                throw new ArgumentException();
+            }
             if (source.Length == 1)
             {
                 return "Yes";
